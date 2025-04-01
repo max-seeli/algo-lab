@@ -1,0 +1,21 @@
+[project]
+name = "algo-lab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Max Seeliger", email = "maximilian.seeliger@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "networkx>=3.4.2",
+    "pytest-timeout>=2.3.1",
+    "pytest>=8.3.5",
+]
+
+[project.scripts]
+algo-lab = "algo_lab:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
